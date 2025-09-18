@@ -1,5 +1,6 @@
 package br.com.udemy.tasks.controller.dto;
 
+import br.com.udemy.tasks.model.Address;
 import br.com.udemy.tasks.model.TaskState;
 
 public class TaskDTO {
@@ -12,6 +13,8 @@ public class TaskDTO {
     private int priority;
 
     private TaskState state;
+
+    private Address address;
 
     public String getId() {
         return id;
@@ -51,5 +54,13 @@ public class TaskDTO {
 
     public void setState(TaskState state) {
         this.state = state;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
