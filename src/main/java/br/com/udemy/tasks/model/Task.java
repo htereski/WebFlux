@@ -74,6 +74,14 @@ public class Task {
         return this.created == null;
     }
 
+    public boolean isValidState() {
+        return this.state != null;
+    }
+
+    public boolean isValidPriority() {
+        return this.priority > 0;
+    }
+
     public String getId() {
         return id;
     }
